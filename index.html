@@ -1,32 +1,89 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-<title>WishBrohh Lab</title>
+<title>WishBrohh Digital Lab</title>
+
 <style>
 
 body{
-background:black;
-color:#00ffff;
+margin:0;
 font-family:Arial;
-text-align:center;
-padding-top:100px;
+background:#0a0a0a;
+color:white;
 }
 
-h1{
+/* NAVBAR */
+
+nav{
+background:black;
+padding:15px;
+position:sticky;
+top:0;
+}
+
+nav a{
+color:cyan;
+margin:20px;
+text-decoration:none;
+font-size:18px;
+}
+
+/* HERO */
+
+.hero{
+text-align:center;
+padding:120px 20px;
+background:linear-gradient(black,#111);
+}
+
+.hero h1{
 font-size:60px;
+color:cyan;
 text-shadow:0 0 20px cyan;
 }
 
-p{
-font-size:20px;
+/* SECTIONS */
+
+.section{
+padding:80px 20px;
+text-align:center;
 }
 
-button{
-padding:15px 30px;
-font-size:18px;
-background:cyan;
-border:none;
-cursor:pointer;
+.cards{
+display:flex;
+justify-content:center;
+flex-wrap:wrap;
+gap:30px;
+}
+
+.card{
+background:#111;
+padding:30px;
+width:250px;
+border-radius:10px;
+box-shadow:0 0 10px cyan;
+}
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* GALLERY */
+
+.gallery img{
+width:250px;
+margin:15px;
+border-radius:10px;
+}
+
+/* FOOTER */
+
+footer{
+background:black;
+padding:40px;
+text-align:center;
+color:gray;
 }
 
 </style>
@@ -34,11 +91,104 @@ cursor:pointer;
 
 <body>
 
-<h1>Welcome to WishBrohh Lab</h1>
+<!-- NAVBAR -->
 
-<p>Exploring Time, Space and Code</p>
+<nav>
+<a href="#">Home</a>
+<a href="#about">About</a>
+<a href="#projects">Projects</a>
+<a href="#gallery">Gallery</a>
+<a href="#contact">Contact</a>
+</nav>
 
-<button>Enter the Lab</button>
+
+<!-- HERO -->
+
+<div class="hero">
+
+<h1>WishBrohh Digital Lab</h1>
+
+<p>Exploring Code • Time • Experiments</p>
+
+</div>
+
+
+<!-- ABOUT -->
+
+<div class="section" id="about">
+
+<h2>About This Lab</h2>
+
+<p>This website is a test lab where I experiment with code,
+AI tools, Blender projects and strange ideas.</p>
+
+</div>
+
+
+<!-- PROJECTS -->
+
+<div class="section" id="projects">
+
+<h2>Projects</h2>
+
+<div class="cards">
+
+<div class="card">
+<h3>AI Experiments</h3>
+<p>Testing AI tools and websites.</p>
+</div>
+
+<div class="card">
+<h3>Blender Worlds</h3>
+<p>Mountains, towers and strange structures.</p>
+</div>
+
+<div class="card">
+<h3>Time Research</h3>
+<p>Ideas about time and reality.</p>
+</div>
+
+</div>
+
+</div>
+
+
+<!-- GALLERY -->
+
+<div class="section" id="gallery">
+
+<h2>Gallery</h2>
+
+<div class="gallery">
+
+<img src="https://picsum.photos/300/200">
+<img src="https://picsum.photos/301/200">
+<img src="https://picsum.photos/302/200">
+
+</div>
+
+</div>
+
+
+<!-- CONTACT -->
+
+<div class="section" id="contact">
+
+<h2>Contact</h2>
+
+<p>Email: wishbrohh@lab.com</p>
+
+</div>
+
+
+<!-- FOOTER -->
+
+<footer>
+
+<p>© 2026 WishBrohh Digital Lab</p>
+
+</footer>
 
 </body>
+
 </html>
